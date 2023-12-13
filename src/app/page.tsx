@@ -10,6 +10,14 @@ export default function Home() {
     invoke<string>('get_env', { name: 'WEATHER_API_SECRET' })
       .then((result) => setEnvValue(result))
       .catch(console.error)
+
+    const aoba = async () => {
+      const res = await invoke<string>('get_env', {
+        name: 'WEATHER_API_SECRET',
+      })
+      console.log(res)
+    }
+    aoba()
   }, [])
 
   return (
