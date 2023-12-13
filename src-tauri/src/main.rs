@@ -6,7 +6,6 @@ use std::env;
 
 fn main() {
     dotenv().expect(".env file not found");
-    println!("{}", get_env("WEATHER_API_SECRET"));
 
     tauri::Builder::default()
         .invoke_handler(tauri::generate_handler![get_env])

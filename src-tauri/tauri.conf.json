@@ -55,11 +55,16 @@
     },
     "windows": [
       {
-        "fullscreen": false,
-        "height": 600,
-        "resizable": true,
         "title": "Weatherium",
-        "width": 800
+        "decorations": false,
+        "fullscreen": false,
+        "skipTaskbar": true,
+        "transparent": true,
+        "resizable": false,
+        "height": 150,
+        "width": 300,
+        "x": 8,
+        "y": 8
       }
     ]
   }
